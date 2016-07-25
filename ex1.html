@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+
+margin : 10px;
+}
+#popupKey 
+{
+    display : inline-block;
+    min-width: 150px;
+    color : black;
+    font-weight : bold;
+}
+
+.inputdiv{
+ 
+   border: 1px solid white;
+   border-radius: 10px;
+   padding: 5px;
+   margin : 6px;
+   background-color : rgba(151, 177, 204, 0.4);
+   color : black;
+   font-weight:normal;
+}
+
+p{
+
+margin-left:10px;
+margin-bottom : 0px;
+color:white;
+font-weight:bold;
+}
+
+
+</style>
+</head>
+<body>
+
+<div  style="background-image: url(background.png);">
+<p>STEP 1: Your Details</p>
+
+  <div class = inputdiv><div id="popupKey">Name</div><input placeholder="First and last name" style="width:50%"  name="nameval"   type="text"></input></div>
+   <div class = inputdiv><div id="popupKey">E-Mail</div><input placeholder="example@domain.com" style="width:50%" name="emailval" type="text"></input>
+</div>
+   <div class = inputdiv><div id="popupKey">Phone</div><input placeholder="e.g. +647500000000" style="width:50%" name="phoneval" type="text"></input>
+</div>
+
+
+
+<p>STEP 2: Delivery Address</p>
+  <div class = inputdiv><div  id="popupKey">Address</div><textarea style="width:50%"  name="addval"   type="text"></textarea ></div>
+   <div class = inputdiv><div id="popupKey">Pin</div><input  style="width:50%" name="pinval" type="text"></input>
+</div>
+   <div class = inputdiv><div id="popupKey">Country</div><input name="countryval" style="width:50%"  type="text"></input>
+</div>
+
+
+<p>STEP 3: Card Details</p>
+   <div class = inputdiv><div id="popupKey">Card Type</div>
+<input   value="1" name="cardtype" type="radio"><img height=22 width=50 src="card1.jpg">Visa</input>
+<input   value="2" name="cardtype" type="radio"><img height=22 width=50 src="card2.jpg">AMEX</input>
+<input   value="3" name="cardtype" type="radio"><img height=22 width=50 src="card3.png">Master</input>
+</div>
+
+   <div class = inputdiv><div id="popupKey">Card Number</div>
+<input  style="width:50%"  type="text"></input>
+</div>
+
+ <div class = inputdiv><div id="popupKey">Security Code</div>
+<input  style="width:50%"  type="text"></input>
+</div>
+
+
+ <div class = inputdiv><div id="popupKey">Name on Card</div>
+<input placeholder="Exact Name as on Card" style="width:50%"  type="text"></input>
+</div>
+
+
+<br>
+ <div align=center><input   style="height:30px; width:60px; color:white;background-color:black;border-radius: 10px;margin-bottom:10px;" type="button" value="Buy It"><br></input></div>
+</div>
+
+<br>
+</body>
+</html>
